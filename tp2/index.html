@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- Grâce au bouton "Add" ajoutez une balise "li" avec du texte (content x, x est un nombre) en dernier élément de la balise "ul" -->
+
+    <main>
+        <button type="button">Add</button>
+
+        <ul>
+
+        </ul>
+    </main>
+
+    <script type="text/javascript">
+
+    var add = document.getElementsByTagName('button').item(0);
+    var ul = document.getElementsByTagName('ul').item(0);
+
+
+
+    add.addEventListener('click', function(e) {
+      e.preventDefault();
+      var li =   document.createElement('li');
+      var text = document.createTextNode('content ' + (1+ ul.children.length));
+
+      ul.appendChild(li);
+      li.appendChild(text);
+
+      // console.log(ul.children.length);
+
+    });
+
+    </script>
+</body>
+</html>

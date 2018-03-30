@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <!-- A partir de la structure suivante créez une todo list avec le bouton delete -->
+    <!-- Puis en cliquant sur le bouton delete ajouter la propiété style "display:none" à l'attribut parent li -->
+
+    <main class="container">
+        <ul class="list-group">
+            <!-- <li class="list-group-item">Task 1 <a href="#" class="btn btn-primary btn-sm float-right">delete</a></li> -->
+        </ul>
+    </main>
+
+    <script type="text/javascript">
+
+
+        var structure = [
+            {
+                'tag': 'li',
+                'content': 'task 1'
+            },
+            {
+                'tag': 'li',
+                'content': 'task 2'
+            },
+            {
+                'tag': 'li',
+                'content': 'task 3'
+            },
+            {
+                'tag': 'li',
+                'content': 'task 3'
+            },{
+                'tag': 'li',
+                'content': 'task 4'
+            }
+        ]
+
+        console.log(structure[1]);
+
+        var body = document.getElementsByTagName('body').item(0);
+        var ul = document.getElementsByTagName('ul');
+
+        
+
+        for (var i = 0; i < structure.length; i++) {
+          ul.appendChild(structure[i]);
+        }
+
+
+        console.log(ul);
+
+
+
+
+
+        console.log(structure);
+
+
+    </script>
+</body>
+</html>

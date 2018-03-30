@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .square {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #CCC;
+            margin-right: 10px;
+            float: left;
+        }
+
+        .selected {
+            background-color: #CCCCCC;
+            border: 1px solid #000;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Vous devez attribuer la classe selected sur l'élément cliqué et la supprimer de tous les autre éléments -->
+
+    <main>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </main>
+
+    <script type="text/javascript">
+
+    var square = document.getElementsByClassName('square');
+
+    // console.log(square);
+
+    square.item(0).addEventListener('click', function(e) {
+      // console.log(e);
+      // console.log('e');
+
+      square.item(0).className='square selected';
+      square.item(1).className='square';
+      square.item(2).className='square';
+      square.item(3).className='square';
+    });
+
+    square.item(1).addEventListener('click', function(f) {
+      // console.log(f);
+      // console.log('f');
+
+      square.item(0).className='square';
+      square.item(1).className='square selected';
+      square.item(2).className='square';
+      square.item(3).className='square';
+    });
+
+    square.item(2).addEventListener('click', function(g) {
+      // console.log(g);
+      // console.log('g');
+
+      square.item(0).className='square';
+      square.item(1).className='square';
+      square.item(2).className='square selected';
+      square.item(3).className='square';
+    });
+
+    square.item(3).addEventListener('click', function(h) {
+      // console.log(h);
+      // console.log('h');
+
+      square.item(0).className='square';
+      square.item(1).className='square';
+      square.item(2).className='square';
+      square.item(3).className='square selected';
+    });
+
+
+
+
+
+
+
+
+    // square1.className='selected';
+
+    </script>
+</body>
+</html>
